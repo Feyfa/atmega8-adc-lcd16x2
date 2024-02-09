@@ -10,7 +10,7 @@ void adcInit()
 int adcRead(unsigned char pin)
 {
 	// (1 << REFS0) Voltage Reference Selection use AVCC with external capacitor at AREF pin
-	// (pin & 0xF0) Select pin adc
+	// (pin & 0x0F) Select pin adc
 	// if you use pin 3
 	// (3 & 0x0F)
 	// (00000011 & 00001111)
